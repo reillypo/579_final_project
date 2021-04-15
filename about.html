@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8de3065862.js" crossorigin="anonymous" defer></script>
+    <title>Reilly Potter's About Me</title>
+</head>
+
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+	<header>
+        <h1 class="site_title">Reilly Potter</h1>
+      <nav>
+        <ul class="nav_links">
+          <li class="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item"><a href="about.html"><u>About Me</u></a></li>
+          <li class="nav_item"><a href="contact.html">Contact</a></li>
+          <li class="nav_item"><a href="resume.html">Resume</a></li>
+          <li class="nav_item"><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main id="main">
+        <section>
+            <h2 id="about-me"><em>About Me</em></h2>
+            <h3>Education</h3><br>
+            <p>
+                My name is Reilly Potter and I am a first year Master of Science in Information (MSI) student with concentrations in User Experience (UX) Design and Human Computer Interaction (HCI).
+            </p><br>
+            <img id="reilly-photo" src="images/reilly_headshot.jpg" alt="Reilly's Professional Headshot"><br>
+        </section>
+        <hr>
+        <h2>Reilly's Experience Timeline</h2>
+        <section class="cd-horizontal-timeline">
+            <div class="timeline">
+                <div class="events-wrapper">
+                    <div class="events">
+                        <ol>
+                            <li><a href="#0" data-date="01/01/2014" class="selected">June</a></li>
+                            <li><a href="#0" data-date="01/02/2014">Sept</a></li>
+                            <li><a href="#0" data-date="01/04/2014">April</a></li>
+                            <li><a href="#0" data-date="01/05/2014">Oct</a></li>
+                            <li><a href="#0" data-date="01/07/2014">June</a></li>
+                            <li><a href="#0" data-date="01/09/2014">May</a></li>
+                            <li><a href="#0" data-date="01/10/2014">June</a></li>
+                            <li><a href="#0" data-date="01/11/2014">July</a></li>
+                            <li><a href="#0" data-date="01/12/2014">Sept</a></li>
+                            <li><a href="#0" data-date="01/01/2015">Oct</a></li>
+                        </ol>
+        
+                        <span class="filling-line" aria-hidden="true"></span>
+                    </div>
+                </div>
+                    
+                <ul class="cd-timeline-navigation">
+                    <li><a href="#0" class="prev inactive">Prev</a></li>
+                    <li><a href="#0" class="next">Next</a></li>
+                </ul>
+            </div>
+        
+            <div class="events-content">
+                <ol>
+                    <li class="selected" data-date="01/01/2014">
+                        <h2>Graduated High School</h2>
+                        <em>June 15th, 2016</em>
+                        <p>	
+                            In June 2016 I graduated from Grosse Pointe South High School. On to the next adventure!
+                        </p>
+                    </li>
+        
+                    <li data-date="01/02/2014">
+                        <h2>Began Undergraduate Degree</h2>
+                        <em>September 2nd, 2016</em>
+                        <p>	
+                            I began my freshman year at the University of Michigan in September 2016. Going in I had little idea
+                            what to expect, but I started to explore the opportunities that UM provides.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/04/2014">
+                        <h2>Declared Economics Major</h2>
+                        <em>April 10th, 2018</em>
+                        <p>	
+                            After trying out several different academic paths like engineering I decided to pursue economics.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/05/2014">
+                        <h2>Declared Entrepreneurship Minor</h2>
+                        <em>October 15th, 2018</em>
+                        <p>	
+                            I was enjoying economics, but found that the work was almost entirely theoretical and individual.
+                            So, I was looking for a minor that would give me soft skills such as presenting and also allow me to
+                            work in groups. After extensive research, I decided to pursue the entrepreneurship minor, and I'm glad
+                            I did!
+                        </p>
+                    </li>
+        
+                    <li data-date="01/07/2014">
+                        <h2>Interned for Hagerty</h2>
+                        <em>June 3rd, 2019</em>
+                        <p>	
+                            My first intership was with Hagerty, an insurance company based in Traverse City, Michigan. I moved to TC for the
+                            the summer and worked with the Hagerty Specialty Team. Our team specialized in high-performance motorsports, so the
+                            experience was a lot of fun!
+                        </p>
+                    </li>
+        
+                    <li data-date="01/09/2014">
+                        <h2>Graduated from U of M</h2>
+                        <em>May 2nd, 2020</em>
+                        <p>	
+                            I completed my bachelors degree at the University of Michigan during the spring of 2020. I had finished my degree from home
+                            during a pandemic, but I was happy to be able to move onto the next stage of my life.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/10/2014">
+                        <h2>Web Design Internship</h2>
+                        <em>June 2nd, 2020</em>
+                        <p>	
+                            After graduation, I had two options, get a job, or continue on in my education. I decided to continue my education, but that meant I needed
+                            an internship for the summer. I had been applying for full-time job offers, so I did not have anything lined up. So, I ended up working for my father
+                            and redesigned his website. I also participated in the sales side of the business.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/11/2014">
+                        <h2>Began MSI Program</h2>
+                        <em>August 25th, 2020</em>
+                        <p>	
+                            Fall arrived, and I started my first semester of the Masters of Science in Information (MSI) with a concentration in Human-Computer Interaction. 
+                            I was excited to begin the next chapter of my academic career!
+                        </p>
+                    </li>
+        
+                    <li data-date="01/12/2014">
+                        <h2>Became a SI 360 GSI</h2>
+                        <em>September 10th, 2020</em>
+                        <p>	
+                            I applied to become a graduate student instructor (GSI) for SI 360, which is an entrepreneurship practicum hosted by the School of Information and 
+                            got the position! I have held the positon for two semesters now, and have managed, taught, and evaluated approximately 70 students out of a class of 270 each semester.
+                        </p>
+                    </li>
+        
+                    <li data-date="01/01/2015">
+                        <h2>UX Consulting Project</h2>
+                        <em>October 8th, 2020</em>
+                        <p>	
+                            As part of SI 501 I had the opportunity to consult for the Human Resources department for the University of Michigan's School of Dentistry. I worked with two
+                            other MSI students to evaluate their information retrieval system. More details are available under the projects tab on this site.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <hr>
+        <section>
+            <h3>Undergrad @ UM</h3><br>
+        </section>
+        <div id="thumbnails"></div><br>
+        <figure>
+            <img id="featured" alt="Rotating Undergraduate Picture" /><br>
+            <figcaption id="current_description"></figcaption>
+        </figure>
+        </main>
+    <footer id="foot">
+        <p>
+            <div id='displayMoment'>Fri Feb 26 2021 10:44:26 GMT-0500</div>
+            <div id='social_links'>
+                <br><a href = "https://www.linkedin.com/in/reilly-potter" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a id="github" href="https://github.com/reillypo" aria-label="Github"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </p>    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-database.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+    <script src="https://kit.fontawesome.com/8de3065862.js" crossorigin="anonymous" defer></script>
+    <title>Reilly Potter's Contact Page</title>
+</head>
+<body>
+	<a class = "skip" href="#main">Skip to Main Content</a>
+    <header>
+      <h1 class="site_title">Reilly Potter</h1>
+      <nav>
+        <ul class="nav_links">
+          <li class="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item"><a href="about.html">About Me</a></li>
+          <li class="nav_item"><a href="contact.html"><u>Contact</u></a></li>
+          <li class="nav_item"><a href="resume.html">Resume</a></li>
+          <li class="nav_item"><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="container">
+        <h1 class="brand">Contact Me</h1>
+        <h2 id="contact_header">Please feel free to email me, call me, or reach me via the form below.</h2><br>
+        <div class="wrapper">
+        <div class="company_info">
+          <h3>Reilly Potter</h3>
+          <ul>
+            <li><i class="fas fa-road"></i> 412 Hamilton Place, Ann Arbor</li>
+            <li><i class="fas fa-phone"></i> 313-303-4284</li>
+            <li><i class="fas fa-envelope"></i> reillypo@umich.edu</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Me</h3>
+          <div class="alert">Your message has been sent!</div>
+          <form id="contactForm">
+            <p>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+              <label for="company">Company</label>
+              <input type="text" name="company" id="company">
+            </p>
+            <p>
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+              <label for="phone">Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            <p class="full">
+              <label for="message">Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      </div>
+        </main>
+        <footer id="foot">
+          <p>
+              <div id='displayMoment'>Fri Feb 26 2021 10:44:26 GMT-0500</div>
+              <div id='social_links'>
+                <br><a href = "https://www.linkedin.com/in/reilly-potter" aria-label="LinkedIn"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a id="github" href="https://github.com/reillypo" aria-label="Github"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+              </div>
+          </p>    
+      </footer>
+    </body>
+    </html>
